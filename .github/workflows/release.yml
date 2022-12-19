@@ -26,5 +26,5 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           name: ${{ env.RELEASE_VERSION }}
-          tag_name: ${{ env.RELEASE_VERSION }}
+          tag_name: v${{ env.RELEASE_VERSION }}
           files: ./target/wowchat-${{ env.RELEASE_VERSION }}.zip
